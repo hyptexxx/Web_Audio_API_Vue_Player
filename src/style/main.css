@@ -1,0 +1,13 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "partials/content.css";
+@import "partials/background.css";
+@import "partials/flip.css";
+
+@font-face {
+  font-family: chiller;
+  src: resolve("CHILLER.TTF");
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}

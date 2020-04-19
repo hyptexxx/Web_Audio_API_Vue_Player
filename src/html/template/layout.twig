@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+{% include 'partials/head.twig' %}
+<body>
+<div id="app" class="main-wrapper">
+
+    <bg-slider></bg-slider>
+    <section>
+        {% block page %}{% endblock %}
+    </section>
+
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
