@@ -5,10 +5,37 @@
 <div id="app" class="main-wrapper">
 
     <bg-slider></bg-slider>
-    <section>
-        {% block page %}{% endblock %}
+    <section class="page-user-player">
+        <div class="visualiser">
+            <visualiser></visualiser>
+        </div>
+        <div class="page-user-player-controls-song-container">
+            <div class="page-user-player-controls-song-button-previous">
+                <img src="img/go-to.png" alt="" class="page-user-player-controls-song-button-img">
+            </div>
+            <div class="page-user-player-controls-song-button-play">
+                <img src="img/play.png" alt="" class="page-user-player-controls-song-button-img-play">
+            </div>
+            <div class="page-user-player-controls-song-button-next">
+                <img src="img/go-to.png" alt="" class="page-user-player-controls-song-button-img">
+            </div>
+            <div class="page-user-player-controls-song-button-songs-order">
+                <img src="img/go-to.png" alt="" class="page-user-player-controls-song-button-img">
+            </div>
+        </div>
+        <div class="page-user-player-song-info-container">
+            <div class="page-user-player-song-info-">
+                <img src="" alt="">
+            </div>
+            <div class="page-user-player-song-info-author">Test</div>
+            <div class="page-user-player-song-info-song-name">Test</div>
+        </div>
+        <div class="page-user-player-controls-container">
+            <div class="page-user-player-controls-mix-songs"></div>
+            <div class="page-user-player-controls-repeat-song"></div>
+            <div class="page-user-player-controls-volume-level"></div>
+        </div>
     </section>
-
 </div>
 <script src="js/app.js"></script>
 </body>

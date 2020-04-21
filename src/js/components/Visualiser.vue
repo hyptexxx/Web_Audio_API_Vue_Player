@@ -1,8 +1,8 @@
 <template>
     <div>
-        <canvas id="canvas" width="1200"></canvas>
-        <audio controls id="audioElementSource" style="position: absolute; top: 0;">
-            <source src="audio/4.mp3" type="audio/mpeg">
+        <canvas id="canvas" width="1980px"></canvas>
+        <audio controls id="audioNodeElementSource" style="position: absolute; top: -100px;">
+            <source src="audio/2.mp3" type="audio/mpeg">
         </audio>
     </div>
 </template>
@@ -36,7 +36,7 @@
         },
         methods: {
             initAudioElementSource: function () {
-                this.audioNodeElementSource = document.getElementById('audioElementSource')
+                this.audioNodeElementSource = document.getElementById('audioNodeElementSource')
                 this.audioNodeElementSource = this.audioCTX.createMediaElementSource(this.audioNodeElementSource)
             },
             initCanvasAndCanvasCTX: function () {
@@ -62,9 +62,9 @@
                 let barHeight
                 this.canvasCTX.clearRect(0, 0, 3000, 200)
                 for (let i = 0; i < this.analyser.frequencyBinCount; i++) {
-                    barHeight = this.frequencyData[i] / 1.1
+                    barHeight = this.frequencyData[i] / 0.9
                     this.canvasCTX.fillRect(x, 150 - barHeight / 2, barWidth, barHeight)
-                    this.canvasCTX.fillStyle = 'rgb(255,255,255)'
+                    this.canvasCTX.fillStyle = 'rgba(255,255,255,.7)'
                     x += barWidth + 1;
                 }
             }

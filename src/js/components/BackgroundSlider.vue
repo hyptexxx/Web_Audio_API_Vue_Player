@@ -3,10 +3,10 @@
         <carousel :per-page="1"
                   :mouseDrag="false"
                   :autoplay="true"
-                  :autoplayTimeout="3000"
+                  :autoplayTimeout="15000"
                   :loop="true"
                   :paginationEnabled="false"
-                  :speed="1500"
+                  :speed="1000"
                   class="background">
 
             <slide v-for="(image, index) in images" :key="index">
@@ -33,21 +33,21 @@
         },
         mounted() {
             this.images = [
-                {
-                    "link": "img/background0.jpg"
-                },
-                {
-                    "link": "img/background1.jpg"
-                },
-                {
-                    "link": "img/background2.jpg"
-                },
+                // {
+                //     "link": "img/background0.jpg"
+                // },
+                // {
+                //     "link": "img/background1.jpg"
+                // },
+                // {
+                //     "link": "img/background2.jpg"
+                // },
                 {
                     "link": "img/background3.jpg"
                 },
-                {
-                    "link": "img/background4.jpg"
-                }
+                // {
+                //     "link": "img/background4.jpg"
+                // }
             ]
         }
     }

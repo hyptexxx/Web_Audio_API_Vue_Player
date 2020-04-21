@@ -1,0 +1,60 @@
+.page-user-player {
+    background: #0000009c;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+}
+
+.visualiser {
+    width: 100%;
+    font-size: 86px;
+    height: 70%;
+    position: absolute;
+    flex: 0 0 auto;
+    display: flex;
+    text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
+    bottom: 100%;
+}
+
+.page-user-player-controls-song-container {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-user-player-controls-song-container:first-child {
+    transform: rotate(180deg);
+}
+
+.page-user-player-controls-song-button-previous,
+.page-user-player-controls-song-button-next,
+.page-user-player-controls-song-button-songs-order,
+.page-user-player-controls-song-button-play {
+    height: 100%;
+    display: flex;
+    width: 23.5%;
+    box-sizing: border-box;
+    filter: brightness(5);
+    padding: 15px 0;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.page-user-player-controls-song-button-img,
+.page-user-player-controls-song-button-img-play {
+    margin: auto;
+    height: 100%;
+}
+
+.page-user-player-controls-song-button-img-play {
+    height: 24px;
+}
+#canvas{
+    height: 100%;
+    position: absolute;
+}

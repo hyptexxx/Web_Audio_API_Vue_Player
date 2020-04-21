@@ -45,13 +45,7 @@
   width: 325px;
 }
 
-.content-clocks {
-  width: 100%;
-  font-size: 86px;
-  flex: 0 0 auto;
-  margin-top: 20px;
-  text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
-}
+
 
 .content-title__wrapper {
   text-shadow: 0 0 20px rgba(10,175,230,1), 0 0 20px rgba(10,175,230,0);
