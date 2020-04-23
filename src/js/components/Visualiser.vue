@@ -1,8 +1,8 @@
 <template>
     <div>
-        <canvas id="canvas" width="1980px"></canvas>
+        <canvas id="canvas"></canvas>
         <audio controls id="audioNodeElementSource" style="position: absolute; top: -100px;">
-            <source src="audio/2.mp3" type="audio/mpeg">
+            <source src="audio/5.mp3" type="audio/mpeg">
         </audio>
     </div>
 </template>
@@ -32,7 +32,6 @@
             this.connectNodes()
             this.initFrequencyData()
             this.startAnalyseAndDraw()
-
         },
         methods: {
             initAudioElementSource: function () {

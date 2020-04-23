@@ -1,8 +1,9 @@
-// Pure JS main file
+import {canvasTrigger} from '../js/modules/example/triggers/canvasResizeTrigger'
+import {initListeners} from '../js/modules/example/listeners/listeners'
 
 let main = () => {
-    // Import modules of a project is here
-    console.log('DOM has been loaded');
+    canvasTrigger()
+    initListeners()
 }
 
 export {main}
